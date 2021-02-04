@@ -5,7 +5,7 @@
 - Java 8+
 - Maven 3 ou 5
 
-# instruções exenciais para o funcionamento
+# instruções essenciais para o funcionamento
 
 Acessar o seguinte caminho **`src\main\resources\env`**  e editar o arquivo **`email.properties`** e editar os seguintes campos:
 
