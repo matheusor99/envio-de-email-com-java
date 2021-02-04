@@ -25,19 +25,21 @@ public class EnviarEmail {
 		while(true) {
 			try {
 //				define de quanto em quanto tempo vai enviar o email, se quiser que envie só 1 vez remover o while(true) e p Thread.sleep
-				Thread.sleep(3000);
+				Thread.sleep(30000);
 				
 				Email email = new Email();
 				
 				email.setAssunto(this.env.getProperty("email.smtp.useremail"));
 				email.setRemetente(this.env.getProperty("email.smtp.useremail"));
 				email.setDestinatario(this.env.getProperty("email.smtp.destinatario"));
+				email.setMensagemEmail(this.env.getProperty("email.smtp.mensagem"));
 				
 				this.emailConfigAndSend(email);
 				
 				System.out.println("email enviado");
 			} catch (Exception e) {
-				// TODO: handle exception
+				System.out.println("erro1: "+ e.getMessage());
+				e.printStackTrace();
 			}
 		}
 	}
@@ -68,7 +70,7 @@ public class EnviarEmail {
 			email.send();
 
 		} catch (Exception e) {
-			System.out.println("erro: "+ e.getMessage() +"/n");
+			System.out.println("erro2: "+ e.getMessage());
 			e.printStackTrace();
 		}
 	}
