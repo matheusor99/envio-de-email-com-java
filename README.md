@@ -13,12 +13,12 @@ Acessar o seguinte caminho **`src\main\resources\env`**  e editar o arquivo **`e
 - email.smtp.password=senha do email
 - email.smtp.destinatario=email do destinatario
 - email.smtp.assunto=assunto do email
-- email.smtp.mensagem=mensagem de testo do email
+- email.smtp.mensagem=mensagem de texto do email
 
-Apos essa configurações va ao seu email remetente e habilite a opção `Apps menos seguros` nas configurações do gmail.
+Após essa configurações vá ao seu email remetente e habilite a opção `Apps menos seguros` nas configurações do gmail.
 
 # Executar Projeto
 
-Para executar o projeto agora todo configurado, entre na pasta rais do projeto e execute
+Para executar o projeto agora todo configurado, entre na pasta raiz do projeto e execute
 
 - `mvn clean instal`
