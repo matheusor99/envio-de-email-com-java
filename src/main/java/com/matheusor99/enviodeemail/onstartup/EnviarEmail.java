@@ -29,10 +29,10 @@ public class EnviarEmail {
 				
 				Email email = new Email();
 				
-				email.setAssunto(this.env.getProperty("email.smtp.useremail"));
 				email.setRemetente(this.env.getProperty("email.smtp.useremail"));
 				email.setDestinatario(this.env.getProperty("email.smtp.destinatario"));
-				email.setMensagemEmail(this.env.getProperty("email.smtp.mensagem"));
+				email.setAssunto("");
+				email.setMensagemEmail("");
 				
 				this.emailConfigAndSend(email);
 				

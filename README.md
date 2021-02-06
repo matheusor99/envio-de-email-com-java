@@ -12,8 +12,6 @@ Acessar o seguinte caminho **`src\main\resources\env`**  e editar o arquivo **`e
 - email.smtp.useremail=login do gmail que ira enviar os emails (remetente) 
 - email.smtp.password=senha do email
 - email.smtp.destinatario=email do destinatario
-- email.smtp.assunto=assunto do email
-- email.smtp.mensagem=mensagem de texto do email
 
 Após essa configurações vá ao seu email remetente e habilite a opção `Apps menos seguros` nas configurações do gmail.
 
